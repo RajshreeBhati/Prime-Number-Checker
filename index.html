@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔢 Prime Number Checker</h1>
+        <p>Find out whether your number is prime or not!</p>
+
+        <input type="number" id="number"
+               placeholder="Enter a number">
+
+        <button onclick="checkPrime()">Check Number</button>
+        <button class="clear-btn" onclick="clearInput()">Clear</button>
+
+        <h2 id="result"></h2>
+
+        <button class="history-btn" onclick="toggleHistory()">
+            Check History
+        </button>
+
+        <div class="history-section" id="historySection">
+            <h3>📋 Check History</h3>
+            <ul id="history"></ul>
+            <button class="delete-btn" onclick="clearHistory()">
+                Clear History
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

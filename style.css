@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141E30, #243B55);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: #243B55;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.clear-btn {
+    background: #7f8c8d;
+}
+
+#result {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.prime {
+    background: #d4edda;
+    color: #155724;
+}
+
+.not-prime {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.history-btn {
+    background: #243B55;
+    margin-top: 10px;
+}
+
+.history-section {
+    margin-top: 20px;
+    text-align: left;
+    display: none;
+}
+
+.history-section h3 {
+    margin-bottom: 15px;
+    color: #243B55;
+}
+
+#history {
+    list-style: none;
+}
+
+#history li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #f3f3f3;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    margin-top: 12px;
+}
